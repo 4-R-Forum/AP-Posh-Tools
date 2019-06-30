@@ -1,0 +1,2 @@
+# AP-Posh_tools
+Powershell scripts with a Xaml Gui to help Aras Practitioners with post-processing changes in a development database for use with continuous integration. New Configuration Report, Add-To-Package, Audit-Package and Export functionality replaces obsolete ActiveX in the Self-Documenting repo.  The Gui has menu items to: Add selected rows to PackageDefinitions, Export selected rows, Audit PackageDefinitions to avoid import errors, and  Launch Beyond Compare and the Export/Import tool.
