@@ -105,6 +105,7 @@ insert into @res
  from property p
  inner join [itemtype] i on p.data_source=i.ID
  where p.SOURCE_ID =@id
+ and not i.is_relationship = '1' -- suppress Relationship ItemTypes, must not be in PackageDefinition
  and not i.ID  in (select element_id from @res)
  and not i.NAME in ('ItemType','Life Cycle State','Permission','Revision','Team','User','History Template','Help','Identity')
  and not p.name in ('id','config_id')
